@@ -14,12 +14,12 @@
 #define DC_VELOCITY_DEFAULT_VELOCITY_Z		0.0  
 
 // Variable keys.
-#define DC_VELOCITY_VAR_KEY_INSTANCE		"dcvel_0"
-#define DC_VELOCITY_VAR_KEY_ENT				"dcvel_1"
-#define DC_VELOCITY_VAR_KEY_INVERT_X		"dcvel_2"
-#define DC_VELOCITY_VAR_KEY_VELOCITY_X		"dcvel_3"
-#define DC_VELOCITY_VAR_KEY_VELOCITY_Y		"dcvel_4"
-#define DC_VELOCITY_VAR_KEY_VELOCITY_Z		"dcvel_5"
+#define DC_VELOCITY_MEMBER_INSTANCE		"dcvel_0"
+#define DC_VELOCITY_MEMBER_ENT				"dcvel_1"
+#define DC_VELOCITY_MEMBER_INVERT_X		"dcvel_2"
+#define DC_VELOCITY_MEMBER_VELOCITY_X		"dcvel_3"
+#define DC_VELOCITY_MEMBER_VELOCITY_Y		"dcvel_4"
+#define DC_VELOCITY_MEMBER_VELOCITY_Z		"dcvel_5"
 
 #endif // !DC_VELOCITY_CONFIG
 

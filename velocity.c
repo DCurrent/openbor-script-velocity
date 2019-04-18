@@ -8,7 +8,7 @@ void dc_velocity_get_entity()
 	int instance;
 	void result;
 
-	result = getlocalvar(instance + DC_VELOCITY_VAR_KEY_ENT);
+	result = getlocalvar(instance + DC_VELOCITY_MEMBER_ENT);
 
 	if (typeof(result) != openborconstant("VT_PTR"))
 	{
@@ -22,7 +22,7 @@ void dc_velocity_set_entity(void value)
 {
 	int instance;
 
-	setlocalvar(instance + DC_VELOCITY_VAR_KEY_ENT, value);
+	setlocalvar(instance + DC_VELOCITY_MEMBER_ENT, value);
 }
 
 // Apply an inverted X when entity faces left?
@@ -31,7 +31,7 @@ int dc_velocity_get_invert_x()
 	int instance;
 	int result;
 
-	result = getlocalvar(instance + DC_VELOCITY_VAR_KEY_INVERT_X);
+	result = getlocalvar(instance + DC_VELOCITY_MEMBER_INVERT_X);
 
 	if (typeof(result) != openborconstant("VT_INTEGER"))
 	{
@@ -45,7 +45,7 @@ int dc_velocity_set_invert_x(int value)
 {
 	int instance;
 
-	setlocalvar(instance + DC_VELOCITY_VAR_KEY_INVERT_X, value);
+	setlocalvar(instance + DC_VELOCITY_MEMBER_INVERT_X, value);
 }
 
 // Velocity setting, X axis.
@@ -54,7 +54,7 @@ float dc_velocity_get_velocity_x()
 	int instance;
 	float result; 
 	
-	result = getlocalvar(instance + DC_VELOCITY_VAR_KEY_VELOCITY_X);
+	result = getlocalvar(instance + DC_VELOCITY_MEMBER_VELOCITY_X);
 
 	if (typeof(result) == openborconstant("VT_EMPTY"))
 	{
@@ -68,7 +68,7 @@ void dc_velocity_set_velocity_x(float value)
 {
 	int instance;
 
-	setlocalvar(instance + DC_VELOCITY_VAR_KEY_VELOCITY_X, value);
+	setlocalvar(instance + DC_VELOCITY_MEMBER_VELOCITY_X, value);
 }
 
 // Velocity setting, Y axis.
@@ -77,7 +77,7 @@ float dc_velocity_get_velocity_y()
 	int instance;
 	float result;
 
-	result = getlocalvar(instance + DC_VELOCITY_VAR_KEY_VELOCITY_Y);
+	result = getlocalvar(instance + DC_VELOCITY_MEMBER_VELOCITY_Y);
 
 	if (typeof(result) == openborconstant("VT_EMPTY"))
 	{
@@ -91,7 +91,7 @@ void dc_velocity_set_velocity_y(float value)
 {
 	int instance;
 
-	setlocalvar(instance + DC_VELOCITY_VAR_KEY_VELOCITY_Y, value);
+	setlocalvar(instance + DC_VELOCITY_MEMBER_VELOCITY_Y, value);
 }
 
 // Velocity setting, Z axis.
@@ -100,7 +100,7 @@ float dc_velocity_get_velocity_z()
 	int instance;
 	float result;
 
-	result = getlocalvar(instance + DC_VELOCITY_VAR_KEY_VELOCITY_Z);
+	result = getlocalvar(instance + DC_VELOCITY_MEMBER_VELOCITY_Z);
 
 	if (typeof(result) == openborconstant("VT_EMPTY"))
 	{
@@ -114,7 +114,7 @@ void dc_velocity_set_velocity_z(float value)
 {
 	int instance;
 
-	setlocalvar(instance + DC_VELOCITY_VAR_KEY_VELOCITY_Z, value);
+	setlocalvar(instance + DC_VELOCITY_MEMBER_VELOCITY_Z, value);
 }
 
 // Caskey, Damon V.

@@ -3,7 +3,7 @@
 // Which instance is in use?
 int dc_velocity_get_instance()
 {
-	void result = getlocalvar(DC_VELOCITY_VAR_KEY_INSTANCE);
+	void result = getlocalvar(DC_VELOCITY_MEMBER_INSTANCE);
 
 	if (!result)
 	{
@@ -15,5 +15,5 @@ int dc_velocity_get_instance()
 
 void dc_velocity_set_instance(int value)
 {
-	setlocalvar(DC_VELOCITY_VAR_KEY_INSTANCE, value);
+	setlocalvar(DC_VELOCITY_MEMBER_INSTANCE, value);
 }
