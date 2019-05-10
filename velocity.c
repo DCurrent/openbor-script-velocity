@@ -162,12 +162,12 @@ void dc_velocity_apply_velocity_x()
 	// Get final velocity values.
 	vel_x = dc_velocity_check_invert_x();
 	vel_y = getentityproperty(ent, "tossv");
-	vel_z = getentityproperty(ent, "zdir");
-
-	log("\n dc_velocity_apply_velocity_x: " + vel_x);
+	vel_z = getentityproperty(ent, "zdir");	
 
 	// Apply velocity.
-	changeentityproperty(ent, "velocity", vel_x, vel_z, vel_y);
+	set_entity_property(ent, "velocity_x", vel_x);
+	set_entity_property(ent, "velocity_y", vel_y);
+	set_entity_property(ent, "velocity_z", vel_z);
 }
 
 // Caskey, Damon V.
